@@ -62,14 +62,6 @@ ng test
 
 </kbd>
 
-## References 
-
-[Leaflet maps](https://leafletjs.com/)
-
-[amCharts](https://www.amcharts.com/)
-
-[Angular Material](https://material.angular.io/)
-
 ## Explanation of design decisions
 
 - Angular 9 is used (and not version 10) to avoid dependency issues with the third party libraries (amCharts, Leaflet)
@@ -88,3 +80,11 @@ ng test
 - Create a shared components folder where all the reusable components can be moved.
 - Upgrade all dependencies and eventually upgrade to Angular 10
 - Accessibility UX/navigations can be improved.  
+
+## References 
+
+[Leaflet maps](https://leafletjs.com/)
+
+[amCharts](https://www.amcharts.com/)
+
+[Angular Material](https://material.angular.io/)
