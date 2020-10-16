@@ -1,0 +1,31 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+          <div class="example-header">
+            <mat-form-field>
+              <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter by Name">
+            </mat-form-field>
+          </div>
+          <div class="mat-elevation-z0">
+            <table mat-table [dataSource]="dataSource" class="mat-elevation-z0" matSort>
+                <ng-container *ngFor="let col of displayedColumns" [matColumnDef]="col">
+                  <th mat-header-cell *matHeaderCellDef mat-sort-header> {{col}} </th>
+                  <td mat-cell *matCellDef="let element">
+                    <div *ngIf="col!=='reading_ts'">
+                      {{element[col]}}
+                    </div> 
+                    <div *ngIf="col==='reading_ts'">
+                      {{element[col] | date: "short"}}
+                    </div> 
+                  </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row (click)="onClick(row)" *matRowDef="let row; columns: displayedColumns;"></tr>
+              </table>            
+            <mat-paginator [pageSizeOptions]="[10, 20, 30]"></mat-paginator>
+          </div>
+        </div>
+    </div>
+</div>
+
+

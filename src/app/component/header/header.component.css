@@ -1,0 +1,33 @@
+
+.bg-black {
+    background-color: #00326b;
+}
+
+.navbar-custom a {
+    color:  #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-custom a:hover {
+    color: #2eaabb;
+}
+
+span {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.btn-primary {
+    background-color:#2eaabb;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    border: none;
+}
+
+.btn-primary:active, .btn-primary:focus {
+    border: none;
+}

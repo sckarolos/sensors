@@ -1,0 +1,12 @@
+#map {
+    height: 400px;
+  }
+
+  div#map {
+    border-radius: 8px;
+}
+
+.container-fluid {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
